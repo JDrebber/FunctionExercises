@@ -4,11 +4,18 @@
 // displays the result in large text. Write the 
 // function definition that goes with this function call.
 
-multiply(5.2 ,9.0);
+void setup() {
+  size(500, 500);
+  noLoop();
+}
+
+void draw() {
+  background(0);
+  multiply(5.2 ,9.0);
+}
 
 
-/*_______________________________________________________________
-_______________________________________________________________
-_______________________________________________________________
-_______________________________________________________________
-*/
+void multiply(float a, float b) {
+  float total = a * b;
+  println(total);
+}
